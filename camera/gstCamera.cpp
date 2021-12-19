@@ -138,7 +138,7 @@ bool gstCamera::buildLaunchStr()
 		// on newer JetPack's, it's common for CSI camera to need flipped
 		// so here we reverse FLIP_NONE with FLIP_ROTATE_180
 		if( mOptions.flipMethod == videoOptions::FLIP_NONE )
-			mOptions.flipMethod = videoOptions::FLIP_ROTATE_180;
+			mOptions.flipMethod = videoOptions::FLIP_NONE;
 		else if( mOptions.flipMethod == videoOptions::FLIP_ROTATE_180 )
 			mOptions.flipMethod = videoOptions::FLIP_NONE;
 	
